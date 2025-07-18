@@ -5,7 +5,7 @@ import { RiTeamFill } from "react-icons/ri"
 import { GoProjectRoadmap } from "react-icons/go";
 import { IoIosDocument } from "react-icons/io";
 import { useNavigate, Routes, Route } from 'react-router-dom';
-import Dashboard from "./Dashboard";
+import Dashboard from "../pages/Dashboard";
 
 const MenuBar = ({menuToggle}) => {
   const navigate = useNavigate();
@@ -21,23 +21,38 @@ const MenuBar = ({menuToggle}) => {
             </li>
             <li>
               <IoPerson style={{ color: 'white' }}/>
-              <a href="">Technician</a>
+              <a href="#" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/technician');
+                }}>Technician</a>
             </li>
             <li>
               <MdHomeRepairService style={{ color: 'white' }}/>
-              <a href="">PMS</a>
+              <a href="#" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/pms');
+                }}>PMS</a>
             </li>
             <li>
               <GoProjectRoadmap style={{ color: 'white' }}/>
-              <a href="">Projects</a>
+              <a href="#" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/projects');
+                }}>Projects</a>
             </li>
             <li>
               <RiTeamFill style={{ color: 'white' }}/>
-              <a href="">View Teams</a>
+              <a href="#" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/viewteams');
+                }}>ViewTeams</a>
             </li>
             <li>
               <IoIosDocument style={{ color: 'white' }}/>
-              <a href="">Baby Book</a>
+              <a href="#" onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/babybook');
+                }}>BabyBook</a>
             </li>
         </ul>
     </div>

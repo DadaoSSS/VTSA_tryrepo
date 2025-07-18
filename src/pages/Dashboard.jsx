@@ -23,7 +23,7 @@ const Dashboard = () => {
           <p>No new messages.</p>
         </div>
 
-        <button className="new-project-button">New Project+</button>
+        <button className="new-project-button">New Project +</button>
       </div>
     </>
   )

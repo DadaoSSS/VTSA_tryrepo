@@ -17,6 +17,8 @@ nav{
   min-height: 60px;
   display: flex;
   align-items: center;
+  position: relative; /*added line*/
+  z-index: 1000;
 }
 
 nav div{
@@ -78,6 +80,7 @@ nav .NotificationList{
   display: flex;
   flex-direction: column;
   /* padding: 1rem; */
+  z-index: 9999; /*added line*/
   justify-content: flex-start;
   background-color: rgb(238, 238, 238);
   color: black;
@@ -109,6 +112,7 @@ nav .NotificationList ul li{
 nav .NotificationList.Hidden{
   /* display: none; */
   height: 0px;
+  overflow: hidden;
 }
 
 nav .NotificationList ul {
@@ -189,6 +193,7 @@ section {
 /*Dashboard styling*/
 .content {
   flex: 1;
+  height: auto;
   padding: 20px;
   position: relative;
   display: flex;
@@ -210,24 +215,59 @@ section {
 }
 
 .box {
-      background: #e0e0e0;
-      border-radius: 10px;
-      padding: 15px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .new-project-button {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      background-color: #0066ff;
-      color: white;
-      border: none;
-      padding: 15px 20px;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*viewTeams table styling*/
+.text-input {
+  font-size: large;
+  margin: 10px;
+  position: relative;
+}
+
+.teams-table {
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 10px;
+}
+
+.teams-table th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.teams-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.teams-table tr:last-child td {
+  border-bottom: none;
 }
 
