@@ -1,7 +1,7 @@
 const Dashboard = () => {
   return (
     <>
-      <div className="content">
+      <div className="dashboard-content">
         <div className="left-panel">
           <div className="box">
             <h3 className="box-header">Ongoing Project/s:</h3>
@@ -20,7 +20,7 @@ const Dashboard = () => {
         <div className="right-panel box">
           <h3 className="box-header">Messages</h3>
           <hr/>
-          <p>No new messages.</p>
+          <p></p>
         </div>
 
         <button className="new-project-button">New Project +</button>

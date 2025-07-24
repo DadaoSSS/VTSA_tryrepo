@@ -15,14 +15,14 @@ const ViewTeams = () => {
   ];
 
   return (
-    <div>
-      <label htmlFor="region-input" className="input-label">
-          Region
+    <div className="viewTeams-container">
+      <label className="input-label">
+          Region:
       </label>
         <input
           id="region-input"
           type="text"
-          className="text-input"
+          className="text-input region-input"
           placeholder="Select Region"
           list="regions"
           value={region}
