@@ -21,7 +21,7 @@ function App() {
         <NavBar invertMenuToggle={invertMenuToggle}/>
         <section>
           <MenuBar menuToggle={menuToggle} navigate={navigate}/>
-            <div style={{ flex: 1 }}>
+            <div className='main-content'>
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />
 
@@ -34,6 +34,7 @@ function App() {
                 <Route path="/viewteams" element={<ViewTeams />} />
 
                 <Route path="/babybook" element={<BabyBook />} />
+
               </Routes>
             </div>
         </section>

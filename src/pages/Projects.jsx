@@ -134,8 +134,8 @@ const Projects = () => {
             <input className="text-input" type="text" />
             <label>Summary:</label>
             <textarea> </textarea>
-            <button className="communication-log-button">Add Attachments</button>
-            <button className="communication-log-button submit-communication-form">Submit</button>
+            <button className="add-attachment-button">Add Attachments</button>
+            <button className="submit-communication-form">Submit</button>
           </div>
         </div>
       </div>
